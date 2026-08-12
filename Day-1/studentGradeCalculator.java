@@ -78,5 +78,6 @@ public class studentGradeCalculator {
         System.out.println("Total : " + total);
         System.out.println("Average : " + average);
         System.out.println("Grade : " + grade);
+        sc.close();
     }
 }
