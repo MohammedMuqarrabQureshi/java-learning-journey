@@ -27,5 +27,6 @@ public class CountCharacters {
                 System.out.println((char) i + " = " + count[i]);
             }
         }
+        sc.close();
     }
 }

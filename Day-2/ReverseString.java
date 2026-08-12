@@ -18,5 +18,6 @@ public class ReverseString {
             reversed += input.charAt(i);
         }
         System.out.println("Reversed string: " + reversed);
+        sc.close();
     }
 }

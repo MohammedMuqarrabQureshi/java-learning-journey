@@ -60,5 +60,6 @@ public class StudentMarksAnalyzer {
         System.out.println("Average Marks: " + averageMarks);
         System.out.println("Number of students passed: " + passedCount);
         System.out.println("Number of students failed: " + failedCount);
+        sc.close();
     }
 }

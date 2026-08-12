@@ -25,5 +25,6 @@ public class FindLargestNumber {
             }
         }
         System.out.println("Largest = " + largest);
+        sc.close();
     }
 }
