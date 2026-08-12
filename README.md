@@ -15,7 +15,7 @@ The goal is to build strong Java fundamentals, develop production-oriented backe
 | Day 1 | Java Fundamentals                     | ✅ Completed |
 | Day 2 | Arrays & Strings                      | ✅ Completed |
 | Day 3 | OOP — Classes, Objects & Constructors | ✅ Completed |
-| Day 4 | Encapsulation, Getters & Setters      | ⏳ Upcoming  |
+| Day 4 | Encapsulation, Getters & Setters      | ✅ Completed  |
 | Day 5 | Inheritance                           | ⏳ Upcoming  |
 | Day 6 | Polymorphism                          | ⏳ Upcoming  |
 | Day 7 | Abstraction & Interfaces              | ⏳ Upcoming  |
@@ -135,6 +135,88 @@ Methods / Behavior
 Also learned how multiple reference variables can point to the same Java object.
 
 ---
+
+## 📚 Day 4 — Encapsulation, Getters & Setters ✅
+
+### Topics Covered
+
+* Encapsulation
+* Data Hiding
+* Access Modifiers
+* `private`
+* `public`
+* Getters
+* Setters
+* Getter-only properties
+* Setter validation
+* Constructor validation
+* `final` fields
+* Immutable object concepts
+* POJO
+* JavaBeans
+* Encapsulation vs Abstraction
+* Controlling object state through methods
+
+### Coding Practice
+
+* Encapsulated Car Class
+* Product Class with Validation
+* Student Class with Age & Marks Validation
+* Employee Class with Encapsulated Fields
+* Temperature Class with Celsius Validation
+* User Account with Controlled Password Access
+* Immutable Employee ID
+* Bank Account Encapsulation
+
+### Mini Project 👨‍💼
+
+**Employee Management System**
+
+Implemented an encapsulated employee management system with:
+
+* Private employee fields
+* Constructor-based initialization
+* Immutable employee ID using `final`
+* Getters for controlled data access
+* Setters for modifiable fields
+* Employee name validation
+* Department validation
+* Salary validation
+* Annual salary calculation
+* Employee details display
+* Controlled modification of employee state
+
+### Key Concepts Learned
+
+```text
+Private Fields
+      ↓
+Data Hiding
+      ↓
+Getters / Setters
+      ↓
+Validation
+      ↓
+Controlled Object State
+      ↓
+Encapsulation
+```
+
+Also learned that not every field should necessarily have both a getter and setter. Fields such as employee IDs can be made immutable, while sensitive fields such as passwords should not be exposed through getters.
+
+### Backend Connection
+
+Encapsulation is a fundamental concept used throughout Java backend development. The same principles will be applied later when building:
+
+* Spring Boot entities
+* DTOs
+* Service classes
+* REST APIs
+* JPA/Hibernate models
+* Spring Security components
+
+---
+
 
 # 🎯 Learning Goals
 
