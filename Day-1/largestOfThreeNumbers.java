@@ -23,6 +23,7 @@ public class largestOfThreeNumbers {
 
             }
         }
+        sc.close();
     }
 
 }

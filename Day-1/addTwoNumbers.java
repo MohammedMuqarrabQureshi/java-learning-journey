@@ -8,5 +8,6 @@ public class addTwoNumbers {
         System.out.println("Enter the second number: ");
         int num2 = sc.nextInt();
         System.out.println("The sum of " + num1 + " and " + num2 + " is: " + (num1 + num2));
+        sc.close();
     }
 }
