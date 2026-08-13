@@ -52,7 +52,7 @@ class UserAccount {
 
     // Setter for username with validation
     public void setUsername(String username) {
-        if (username == null || username.isEmpty()) {
+        if (username == null || username.isBlank()) {
             System.out.println("Invalid username");
         } else {
             this.username = username;

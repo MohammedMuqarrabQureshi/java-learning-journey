@@ -53,11 +53,11 @@ public class Employee {
             throw new IllegalArgumentException("Invalid ID");
         }
 
-        if (name == null || name.isEmpty()) {
+        if (name == null || name.isBlank()) {
             throw new IllegalArgumentException("Invalid name");
         }
 
-        if (department == null || department.isEmpty()) {
+        if (department == null || department.isBlank()) {
             throw new IllegalArgumentException("Invalid department");
         }
 
@@ -88,7 +88,7 @@ public class Employee {
     }
 
     public void setName(String name) {
-        if (name == null || name.isEmpty()) {
+        if (name == null || name.isBlank()) {
             System.out.println("Invalid name");
         } else {
             this.name = name;
@@ -96,7 +96,7 @@ public class Employee {
     }
 
     public void setDepartment(String department) {
-        if (department == null || department.isEmpty()) {
+        if (department == null || department.isBlank()) {
             System.out.println("Invalid department");
         } else {
             this.department = department;
@@ -130,6 +130,7 @@ public class Employee {
         // Testing invalid cases
         try {
             Employee emp2 = new Employee(-1, "", "", -1000);
+            emp2.displayEmployee();
         } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
         }

@@ -17,7 +17,7 @@
 // Age must be between 5 and 100
 // Marks must be between 0 and 100
 
-class student {
+class Student {
     private String name;
     private int age;
     private double marks;
@@ -61,7 +61,7 @@ class student {
     }
 
     public static void main(String[] args) {
-        student student1 = new student();
+        Student student1 = new Student();
         student1.setName("John Doe");
         student1.setAge(20);
         student1.setMarks(85.5);

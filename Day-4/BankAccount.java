@@ -23,18 +23,24 @@
 // deposit()
 // withdraw()
 
-
 /**
  * BankAccount
  */
 public class BankAccount {
 
-    private String accountNumber;
+    private final String accountNumber;
     private String accountHolder;
     private double balance;
 
     // Constructor
     public BankAccount(String accountNumber, String accountHolder, double initialBalance) {
+
+        if (initialBalance < 0) {
+        throw new IllegalArgumentException(
+                "Initial balance cannot be negative"
+        );
+    }
+    
         this.accountNumber = accountNumber;
         this.accountHolder = accountHolder;
         this.balance = initialBalance;
@@ -75,32 +81,26 @@ public class BankAccount {
         }
     }
 
-    //Setters for accountNumber and accountHolder
-    public void setAccountNumber(String accountNumber) {
-        this.accountNumber = accountNumber;
-    }
-
     public void setAccountHolder(String accountHolder) {
         this.accountHolder = accountHolder;
     }
 
-    //balance should not have a setter as per the requirement, so we won't create a setBalance() method.
     public static void main(String[] args) {
-    BankAccount account = new BankAccount("123456", "John Doe", 1000.0);
+        BankAccount account = new BankAccount("123456", "John Doe", 1000.0);
 
-    System.out.println("Account Number: " + account.getAccountNumber());
-    System.out.println("Account Holder: " + account.getAccountHolder());
-    System.out.println("Initial Balance: " + account.getBalance());
+        System.out.println("Account Number: " + account.getAccountNumber());
+        System.out.println("Account Holder: " + account.getAccountHolder());
+        System.out.println("Initial Balance: " + account.getBalance());
 
-    System.out.println("Depositing 500...");
-    account.deposit(500);
+        System.out.println("Depositing 500...");
+        account.deposit(500);
 
-    System.out.println("Balance: " + account.getBalance());
+        System.out.println("Balance: " + account.getBalance());
 
-    System.out.println("Withdrawing 200...");
-    account.withdraw(200);
+        System.out.println("Withdrawing 200...");
+        account.withdraw(200);
 
-    System.out.println("Balance: " + account.getBalance());
-}
+        System.out.println("Balance: " + account.getBalance());
+    }
 
 }

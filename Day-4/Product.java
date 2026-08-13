@@ -48,7 +48,7 @@ class Product {
 
     // Setter for name with validation
     public void setName(String name) {
-        if (name == null || name.isEmpty()) {
+        if (name == null || name.isBlank()) {
             System.out.println("Invalid name");
         } else {
             this.name = name;
@@ -62,7 +62,7 @@ class Product {
 
     // Setter for price with validation
     public void setPrice(double price) {
-        if (price < 0) {
+        if (price <= 0) {
             System.out.println("Invalid price");
         } else {
             this.price = price;
@@ -76,7 +76,7 @@ class Product {
 
     // Setter for quantity with validation
     public void setQuantity(int quantity) {
-        if (quantity < 0) {
+        if (quantity <= 0) {
             System.out.println("Invalid quantity");
         } else {
             this.quantity = quantity;
